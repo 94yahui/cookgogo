@@ -8,12 +8,12 @@ CookGoGo is a multilingual recipe web app that uses Chrome’s Prompt API to gen
 	•	Runs locally in Chrome for privacy
 
 ## Getting Started
-- 1. Clone this repository:
+- Clone this repository:
   ```git clone https://github.com/94yahui/cookgogo.git```
 
-- 2. Open index.html in Google Chrome
-- 3. Type a dish name in your language and view the generated recipe
-- 4. Click steps to mark them as completed
+- Open index.html in Google Chrome
+- Type a dish name in your language and view the generated recipe
+- Click steps to mark them as completed
 
 ## Demo
 You can access the live demo here: `https://cookgogo.vercel.app/`
