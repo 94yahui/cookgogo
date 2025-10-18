@@ -51,8 +51,6 @@ Then generate steps, numbered starting from 1.
 Separate ingredients and steps with a line break.
 `);
 
-        console.log(result);
-
         stepsContainer.textContent = "";
 
         let cookSteps = result.split(/\d+\.\s/);
@@ -68,8 +66,6 @@ Separate ingredients and steps with a line break.
                 const stepIndex = document.createElement('div');
                 stepIndex.className = "step-index";
                 stepIndex.textContent = index + 1;
-
-
 
 
                 const stepContent = document.createElement('div');
