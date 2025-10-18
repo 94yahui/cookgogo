@@ -24,8 +24,10 @@ prompt.addEventListener("keydown", (e) => {
 
         inputContainer.classList.add("active");
         logo.classList.add("active");
+        logo.classList.add("rotate");
         generateCookSteps().then(() => {
             inputContainer.classList.remove("active");
+            logo.classList.remove("rotate");
         });
     }
 });
