@@ -37,6 +37,20 @@ main {
     height: 100px;
 }
 
+.logo.rotate {
+    animation: rotateLogo 2s infinite;
+}
+
+@keyframes rotateLogo {
+    from {
+        transform: rotateY(0deg);
+    }
+
+    to {
+        transform: rotateY(360deg);
+    }
+}
+
 .prompt-container {
     display: flex;
     flex-flow: column nowrap;
