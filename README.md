@@ -1,5 +1,5 @@
-# cookgogo
-CookGoGo is a multilingual recipe web app that uses Chrome’s Prompt API to generate cooking recipes based on the user’s input language. Users can type in any language, and the app automatically creates ingredients and step-by-step instructions in the same language. Each step is clickable to mark it as completed.
+# Cookgogo
+Cookgogo is a multilingual recipe web app that uses Chrome’s Prompt API to generate cooking recipes based on the user’s input language. Users can type in any language, and the app automatically creates ingredients and step-by-step instructions in the same language. Each step is clickable to mark it as completed.
 
 ## Features
 	•	Multilingual input (English, Korean, Japanese, Chinese, etc.)
