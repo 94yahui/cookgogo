@@ -90,46 +90,6 @@ input::placeholder {
     opacity: 1;
 }
 
-@keyframes gradientMove {
-    0% {
-        background-position: 0% 50%;
-    }
-
-    50% {
-        background-position: 100% 50%;
-    }
-
-    100% {
-        background-position: 0% 50%;
-    }
-}
-
-@keyframes rotateGradient {
-    0% {
-        transform: rotate(0);
-    }
-
-    100% {
-        transform: rotate(360deg);
-    }
-}
-
-@keyframes voiceShadow {
-
-    0% {
-        box-shadow: 0 0 10px rgb(255, 255, 255);
-    }
-
-    50% {
-        box-shadow: 0 0 30px rgb(255, 255, 255);
-    }
-
-    100% {
-        box-shadow: 0 0 10px rgb(255, 255, 255);
-    }
-
-}
-
 #steps-container {
     align-self: center;
     max-height: 600px;
@@ -196,6 +156,45 @@ input::placeholder {
     background-color: #efa45f;
 }
 
+@keyframes gradientMove {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+@keyframes rotateGradient {
+    0% {
+        transform: rotate(0);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes voiceShadow {
+
+    0% {
+        box-shadow: 0 0 10px rgb(255, 255, 255);
+    }
+
+    50% {
+        box-shadow: 0 0 30px rgb(255, 255, 255);
+    }
+
+    100% {
+        box-shadow: 0 0 10px rgb(255, 255, 255);
+    }
+
+}
 
 @keyframes slideIn {
     0% {
