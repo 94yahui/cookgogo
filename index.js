@@ -7,7 +7,7 @@ const logo = document.getElementById("logo");
 
 stepsContainer.style.display = "none";
 
-stepsContainer.addEventListener("click", (e)=>{
+stepsContainer.addEventListener("click", (e) => {
     const step = e.target.closest(".step");
     if (!step) return;
     step.classList.toggle("active");
@@ -51,6 +51,7 @@ Then generate steps, numbered starting from 1.
 Separate ingredients and steps with a line break.
 `);
 
+
         stepsContainer.textContent = "";
 
         let cookSteps = result.split(/\d+\.\s/);
@@ -65,12 +66,28 @@ Separate ingredients and steps with a line break.
 
                 const stepIndex = document.createElement('div');
                 stepIndex.className = "step-index";
-                stepIndex.textContent = index + 1;
-
+                stepIndex.textContent = index;
 
                 const stepContent = document.createElement('div');
                 stepContent.className = "step-content";
-                stepContent.textContent = stepContents;
+
+                if (index == 0) {
+                    const ingredients = stepContents.match(/\* [^*]+/g);
+                    if (ingredients) {
+                        ingredients.forEach(item => {
+                            const div = document.createElement('div');
+                            div.className = 'step-ingredient';
+                            div.textContent = item.replace('* ', '');
+                            stepContent.appendChild(div);
+                        });
+                    } else {
+                        stepContent.textContent = stepContents;
+                    }
+                } else {
+
+                    stepContent.textContent = stepContents;
+                }
+
 
                 step.append(stepIndex);
                 step.append(stepContent);
