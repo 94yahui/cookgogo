@@ -155,6 +155,7 @@ input::placeholder {
     border-radius: 20px;
     color: white;
     animation: slideIn .35s ease;
+    transition: background-color .35s ease;
 }
 
 .step:has(.step-ingredient) {
