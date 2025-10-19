@@ -129,6 +129,7 @@ input::placeholder {
     flex-flow: row nowrap;
     align-items: center;
     gap: 1rem;
+    cursor: pointer;
 }
 
 .step-index {
@@ -154,11 +155,10 @@ input::placeholder {
     border-radius: 20px;
     color: white;
     animation: slideIn .35s ease;
-    /* font-size: 1.1rem; */
 }
 
-:not(:nth-child(1)) .step-content {
-    cursor: pointer;
+.step:has(.step-ingredient) {
+    cursor:auto;
 }
 
 .step.active .step-content {
@@ -168,6 +168,22 @@ input::placeholder {
 
 .step:nth-child(1) .step-content {
     background-color: #efa45f;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: start;
+    gap: .5rem;
+    align-items: stretch;
+}
+
+.step:nth-child(1) .step-index {
+    display: none;
+}
+
+.step-ingredient {
+    flex-basis: calc((100% - 0.5rem)/2);
+    background-color:#dd7e26;
+    padding: 0.5rem;
+    border-radius: 10px;
 }
 
 @keyframes gradientMove {
