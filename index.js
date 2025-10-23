@@ -35,6 +35,14 @@ prompt.addEventListener("keydown", (e) => {
 let session;
 
 async function generateCookSteps() {
+
+    if (typeof LanguageModel === 'undefined') {
+        alert(
+            "Please make sure you have enabled the built-in AI feature.\n" +
+            "Go to chrome://flags/, enable Built-in AI, and restart Chrome."
+        );
+    };
+    
     const { defaultTemperature, maxTemperature, defaultTopK, maxTopK } =
         await LanguageModel.params();
 
