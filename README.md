@@ -17,8 +17,9 @@ Cookgogo is a multilingual recipe web app that uses Chrome’s Prompt API to gen
 
 ## Demo
 You can access the live demo here: [https://cookgogo.vercel.app/](https://cookgogo.vercel.app/)
-![Home-page](./demo-images/home-page.png)
 
+![Home-page](./demo-images/home-page.png)
+![Home-page](./demo-images/search-result-English.png)
 
 ## Please make sure you are running desktop Chrome on a supported system ⬇️:
 
